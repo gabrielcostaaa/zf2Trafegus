@@ -1,0 +1,60 @@
+<div class="container">
+    <h2 class="semibold">
+        <span class="glyphicon glyphicon-user"></span> Lista de Motoristas
+    </h2>
+
+    <a class="btn btn-success pull-right" href="<?php echo $this->url('motorista/default', ['controller' => 'motorista', 'action' => 'insert']) ?>">
+        Cadastrar Motorista
+    </a>
+
+    <div class="clearfix"></div>
+    <br>
+
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>RG</th>
+                <th>CPF</th>
+                <th>Telefone</th>
+                <th>Veículo</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if ($this->data): ?>
+                <?php foreach ($this->data as $motorista): ?>
+                    <tr>
+                        <td><?php echo $motorista->getId(); ?></td>
+                        <td><?php echo $motorista->getNome(); ?></td>
+                        <td><?php echo $motorista->getRg(); ?></td>
+                        <td><?php echo $motorista->getCpf(); ?></td>
+                        <td><?php echo $motorista->getTelefone(); ?></td>
+                        <td>
+                            <?php if ($motorista->getVeiculo()): ?>
+                                <?php echo $motorista->getVeiculo()->getPlaca(); ?>
+                            <?php else: ?>
+                                Nenhum veículo associado
+                            <?php endif; ?>
+                        </td>
+                        <td>
+                            <a class="btn btn-primary" href="<?php echo $this->url('motorista/default', ['controller' => 'motorista', 'action' => 'update', 'id' => $motorista->getId()]); ?>">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </a>
+                            <a class="btn btn-danger" href="<?php echo $this->url('motorista/default', ['controller' => 'motorista', 'action' => 'delete', 'id' => $motorista->getId()]); ?>" onclick="return confirm('Tem certeza que deseja excluir?');">
+                                <i class="glyphicon glyphicon-remove-sign"></i>
+                            </a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <tr>
+                    <td colspan="7" class="text-center">Nenhum motorista encontrado.</td>
+                </tr>
+            <?php endif; ?>
+        </tbody>
+    </table>
+</div>
+
+

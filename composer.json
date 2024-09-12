@@ -9,6 +9,16 @@
     "homepage": "http://framework.zend.com/",
     "require": {
         "php": ">=5.5",
-        "zendframework/zendframework": "~2.5"
+        "zendframework/zendframework": "~2.5",
+        "doctrine/doctrine-orm-module": "0.8.*"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+    "psr-4": {
+        "Veiculo\\Entity\\": "module/Veiculo/src/Veiculo/Entity/"
     }
+}
+
 }

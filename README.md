@@ -8,7 +8,7 @@ Este projeto foi desenvolvido utilizando Zend Framework 2 e Doctrine para implem
 Clone o repositório do projeto em sua máquina local utilizando o Git.
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/gabrielcostaaa/zf2Trafegus.git
 ```
 ### 1.2 Instalação das Dependências
 Utilize o Composer para instalar todas as dependências necessárias:

@@ -103,4 +103,18 @@ Abaixo está uma imagem do diagrama do banco de dados:
 
 <img src="docs/db-trafegus.png" alt="Diagrama do Banco de Dados" width="200" />
 
+# 4. Referências do Projeto
 
+Aqui estão alguns recursos que foram úteis para o desenvolvimento do projeto:
+
+- **Curso Zend Framework 2 no YouTube**  
+  [Playlist no YouTube](https://youtube.com/playlist?list=PLhTDLccA9vgExN2c-7kwL9vHSPw5ijelV&si=o33d0G6QrmM7fowC)
+
+- **DevMedia: Zend 2 e Doctrine 2**  
+  [Criando um CRUD com Zend Framework 2 e Doctrine 2](https://www.devmedia.com.br/criando-um-crud-com-zend-framework-2-e-doctrine-2/32100)
+
+- **Read the Docs: Zend 2**  
+  [Documentação do Zend Framework 2](https://zf2.readthedocs.io/en/latest/user-guide/overview.html)
+
+- **Stack Overflow**  
+  [Stack Overflow](https://stackoverflow.com/)

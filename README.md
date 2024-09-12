@@ -41,10 +41,10 @@ php -S localhost:8080 -t public
 ```
 ## 2. Dados Fictícios para Testar
 
-Para facilitar os testes de cadastro de veículos e motoristas, você pode utilizar os seguintes geradores de dados online:
+Para facilitar os testes de cadastro de veículos e motoristas, você pode utilizar o 4Devs:
 
-[Motorista](https://www.4devs.com.br/gerador_de_pessoas)  
-[Veículo](https://www.4devs.com.br/gerador_de_veiculos)
+<a href="https://www.4devs.com.br/gerador_de_pessoas" target="_blank">Motorista</a>  
+<a href="https://www.4devs.com.br/gerador_de_veiculos" target="_blank">Veículo</a>
 
 ## 3. Estrutura Modular
 
@@ -101,6 +101,6 @@ Essa arquitetura modular facilita a manutenção e escalabilidade do projeto, pe
 
 Abaixo está uma imagem do diagrama do banco de dados:
 
-<img src="docs/db-trafegus.png" alt="Diagrama do Banco de Dados" width="400" />
+<img src="docs/db-trafegus.png" alt="Diagrama do Banco de Dados" width="200" />
 
 

@@ -79,7 +79,7 @@ O projeto está organizado em módulos independentes que representam as entidade
         Module.php
 ```
 
-### 1.1 Módulo Base
+### 3.1 Módulo Base
 
 O módulo **Base** foi criado com o objetivo de centralizar funcionalidades comuns, tornando a implementação de novos módulos mais simples e padronizada. Ele contém classes abstratas que são reutilizadas nos módulos específicos, como Motorista e Veículo. As funcionalidades implementadas no Base incluem:
 
@@ -88,7 +88,7 @@ O módulo **Base** foi criado com o objetivo de centralizar funcionalidades comu
 - **Services Abstratos**: Serviços que fornecem métodos comuns, como salvar, deletar e buscar entidades.
 - **Layout e Páginas de Erro Padrão**: O módulo Base também define layouts e páginas de erro padrão para todo o sistema, garantindo uma aparência consistente.
 
-### 1.2 Implementação dos Módulos Motorista e Veículo
+### 3.2 Implementação dos Módulos Motorista e Veículo
 
 Com a estrutura do Base, a implementação dos módulos de **Motorista** e **Veículo** foi feita de maneira simples, estendendo os controladores, entidades e serviços do Base:
 
@@ -97,13 +97,13 @@ Com a estrutura do Base, a implementação dos módulos de **Motorista** e **Ve�
 
 Essa arquitetura modular facilita a manutenção e escalabilidade do projeto, permitindo a criação de novos módulos reutilizando o código já existente no Base.
 
-## 3. Estrutura do Banco de Dados
+## 4. Estrutura do Banco de Dados
 
 Abaixo está uma imagem do diagrama do banco de dados:
 
-<img src="docs/db-trafegus.png" alt="Diagrama do Banco de Dados" width="200" />
+<img src="docs/db-trafegus.png" alt="Diagrama do Banco de Dados" width="250" />
 
-# 4. Referências do Projeto
+## 5. Referências do Projeto
 
 Aqui estão alguns recursos que foram úteis para o desenvolvimento do projeto:
 

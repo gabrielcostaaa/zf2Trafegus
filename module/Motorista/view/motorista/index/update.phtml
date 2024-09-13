@@ -14,7 +14,7 @@
             ->setMessageCloseString('</div>')
             ->render($form);
 
-    $form->setAttribute('action', $this->url('veiculo/default', array('controller' => 'veiculo', 'action' => 'update', 'id' => $this->id)));
+    $form->setAttribute('action', $this->url('motorista/default', array('controller' => 'motorista', 'action' => 'update', 'id' => $this->id)));
 
     $form->prepare();
 

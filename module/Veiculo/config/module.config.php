@@ -4,6 +4,16 @@ namespace Veiculo;
 return array(
     'router' => array(
         'routes' => array(
+            'home' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/',
+                    'defaults' => array(
+                        'controller' => 'Veiculo\Controller\Index',
+                        'action'     => 'index',
+                    ),
+                ),
+            ),
             'veiculo' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(

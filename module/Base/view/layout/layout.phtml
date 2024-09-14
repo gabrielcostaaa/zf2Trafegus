@@ -24,11 +24,11 @@
         <style>
 
             .margin-top {
-                margin-top: 15px; /* Ajuste o valor conforme necessário */
+                margin-top: 15px;
             }
 
             .align-right {
-                float: right; /* Faz o botão ir para a direita */
+                float: right;
             }
 
             .custom-input:focus {
@@ -41,13 +41,16 @@
                 background-color: #FCFBF7;
             }
             .navbar-custom {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
                 background-color: #6a0dad;
                 border-color: #5a0b99;
             }
 
-            .navbar-custom .navbar-brand,
             .navbar-custom .navbar-nav > li > a {
                 color: #fff;
+                border-radius: 20px;
             }
 
             .navbar-custom .navbar-brand:hover,
@@ -76,11 +79,18 @@
             .container {
                 margin-top: 20px;
             }
+
+            .container-nav {
+                display: flex;
+                align-items: center;
+                margin: 20px;
+                gap: 10px;
+            }
         </style>
     </head>
     <body>
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
+            <div class="container container-nav">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">
                         <img src="<?php echo $this->basePath('img/logo-trafegus-4.svg') ?>" alt="Trafegus"/>
